@@ -11,3 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Alias.
+[[ -f "${HOME}/.zalias" ]] && source "${HOME}/.zalias"
+
+# Path para luarocks.
+eval `luarocks path`
