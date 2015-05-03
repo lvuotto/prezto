@@ -21,3 +21,8 @@ if (( $+commands[fortune] )); then
     print
   fi
 fi
+
+if [ -x $HOME/.local/bin/todo ]; then
+    echo
+    $HOME/.local/bin/todo list
+fi
